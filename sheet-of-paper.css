@@ -1,0 +1,80 @@
+﻿
+	/* -------------------------------------------------------------------------------------- */
+	/* --- SHEET OF PAPER -------------------------------------------------------------- */
+	/* -------------------------------------------------------------------------------------- */
+	/* --- Light CSS library to create documents that looks like a sheet of --------- */
+	/* --- paper --------------------------------------------------------------------------- */
+	/* -------------------------------------------------------------------------------------- */
+	/* --- Developed by:				------------------------------------------------------ */
+	/* ---   Rafael Pérez García		------------------------------------------------------ */
+	/* ---   at ImperdibleSoft		------------------------------------------------------ */
+	/* -------------------------------------------------------------------------------------- */
+	/* --- http://www.github.io/imperdiblesoft/sheet-of-paper	 --------------------- */
+	/* --- http://imperdiblesoft.github.io/sheet-of-paper	  --------------------------- */
+	/* -------------------------------------------------------------------------------------- */
+	
+*{
+	line-heigh: normal;
+}
+body{color:#000;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0;}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+q:before,q:after{content:'';}
+abbr,acronym{border:0;font-variant:normal;}
+sup,sub{line-height:-1px;vertical-align:text-top;}
+sub{vertical-align:text-bottom;}
+input, textarea, select{font-family:inherit;font-size:inherit;font-weight:inherit;}
+body {font:13px/1.22 arial,helvetica,clean,sans-serif;*font-size:small;*font:x-small;}
+table {font-size:inherit;font:100%;}
+pre,code,kbd,samp,tt{font-family:monospace;*font-size:108%;line-height:99%;}
+
+/*	Common styles	*/
+.page{
+	position: relative;
+	display: block;
+	float: none;
+	
+	width: 670px;
+	height: 980px;
+	margin: 0px auto;
+	padding: 20px;
+	
+	background: white;
+	border: none;
+	box-sizing: border-box;
+	box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+/*	Viewer styles	*/
+body.viewer{
+	background: #cccccc;
+}
+
+body.viewer .page{
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+/*	Printer styles	*/
+body.printer{
+	background: transparent;
+}
+
+body.printer .page{
+	background: transparent;
+	box-shadow: none;
+}
+
+/*	Other styles (not FW)	*/
+.floating{
+	position: fixed;
+	display: block;
+	float: right;
+	
+	bottom: 20px;
+	right: 20px;
+}
