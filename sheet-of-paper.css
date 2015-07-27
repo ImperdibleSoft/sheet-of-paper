@@ -102,6 +102,17 @@ html, body{
 .sop-page .sop-header .sop-right, .sop-page .sop-footer .sop-right{
 	float: right;
 }
+.sop-footer{
+	position: relative;
+	display: block;
+	float: left;
+	
+	width: 100%;
+	height: auto;
+	bottom: 0px;
+	
+	box-sizing: border-box;
+}
 
 /*	Elements	*/
 .sop-page h1, .sop-page h2, .sop-page h3, .sop-page p{
@@ -156,7 +167,7 @@ html, body{
 	margin-bottom: 5px;
 }
 
-.sop-page .sop-header img{
+.sop-page .sop-header img, .sop-page .sop-footer img{
 	max-width: 100%;
 }
 
