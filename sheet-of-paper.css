@@ -33,48 +33,144 @@ table {font-size:inherit;font:100%;}
 pre,code,kbd,samp,tt{font-family:monospace;*font-size:108%;line-height:99%;}
 
 /*	Common styles	*/
-.page{
+/*	Page sizes	*/
+.sop-page{
 	position: relative;
 	display: block;
 	float: none;
 	
-	width: 670px;
-	height: 980px;
 	margin: 0px auto;
 	padding: 20px;
 	
 	background: white;
 	border: none;
 	box-sizing: border-box;
-	box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);
+	overflow: hidden;
+}
+.sop-page.sop-A3{
+	width: 980px;
+	height: 1415px;
+}
+.sop-page.sop-A4{
+	width: 670px;
+	height: 980px;
+}
+.sop-page.sop-legal{
+	width: 689px;
+	height: 1185px;
+}
+.sop-page.sop-A5{
+	width: 670px;
+	height: 458px;
+}
+
+/*	Sections	*/
+.sop-page .sop-header, .sop-page .sop-body{
+	position: relative;
+	display: block;
+	float: left;
+	
+	width: 100%;
+	height: auto;
+	margin: 10px 0px;
+	
+	/* border: 1px dotted grey; */
+}
+.sop-page .sop-header .sop-left, .sop-page .sop-header .sop-center, .sop-page .sop-header .sop-right{
+	position: relative;
+	display: block;
+	
+	max-width: 32%;
+	height: auto;
+	
+	clear: none;
+	overflow: hidden;
+}
+.sop-page .sop-header .sop-left{
+	float: left;
+}
+.sop-page .sop-header .sop-center{
+	float: none;
+	
+	margin: 0px auto;
+}
+.sop-page .sop-header .sop-right{
+	float: right;
+}
+
+/*	Elements	*/
+.sop-page h1, .sop-page h2, .sop-page h3, .sop-page p{
+	position: relative;
+	display: block;
+	
+	margin-bottom: 20px;
+}
+.sop-page h1{
+	font-size: 150%;
+	font-weight: bold;
+}
+.sop-page h2{
+	font-size: 130%;
+	font-weight: bold;
+}
+.sop-page h3{
+	color: #444444;
+	font-size: 115%;
+	font-weight: bold;
+}
+.sop-page br{
+	clear: both;
+}
+
+.sop-page .sop-underlined{
+	text-decoration: underline;
+}
+.sop-page .sop-justified{
+	text-aling: justify;
+}
+.sop-page .sop-center{
+	text-align: center;
+}
+.sop-page .sop-right{
+	text-align: right;
+}
+
+.sop-page table{
+	width: 100%;
+}
+.sop-page th, .sop-page td{
+	width: auto;
+	height: auto;
+	padding: 5px;
+	
+	border: 1px solid black;
+}
+
+/*	Relative elements	*/
+.sop-page .sop-header img{
+	max-width: 100%;
+}
+.sop-page .sop-header p, .sop-page .sop-footer p{
+	margin-bottom: 5px;
 }
 
 /*	Viewer styles	*/
-body.viewer{
+body.sop-viewer{
 	background: #cccccc;
 }
-
-body.viewer .page{
+body.sop-viewer .sop-page{
 	margin-top: 10px;
 	margin-bottom: 20px;
 }
 
 /*	Printer styles	*/
-body.printer{
+body.sop-printer{
 	background: transparent;
 }
-
-body.printer .page{
+body.sop-printer .sop-page{
 	background: transparent;
 	box-shadow: none;
 }
 
-/*	Other styles (not FW)	*/
-.floating{
-	position: fixed;
-	display: block;
-	float: right;
-	
-	bottom: 20px;
-	right: 20px;
-}
+

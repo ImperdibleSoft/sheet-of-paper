@@ -7,15 +7,78 @@
         <link href="styles/custom.css" type="text/css" rel="stylesheet" />
 	</head>
 	
-	<body class="viewer">
+	<body class="sop-viewer">
 	
-		<div class="page">
-			<h1>Sheet of paper</h1>
-			<br />
-			<p>Small library to create and print paper documents using HTML language.</p>
+		<div class="sop-page sop-A4">
+		
+			<!-- Header -->
+			<section class="sop-header">
+				<div class="sop-right">
+					<p><b>Budget</b>: 123456</p>
+					<p><b>Date</b>: 27/07/2015</p>
+					<p><b>Time</b>: 08:35 a.m.</p>
+				</div>
+				
+				<div class="sop-left">
+					<img src="images/text_logo.png" />
+				</div>
+				<br />
+				
+				<div class="sop-center">
+					<h1>Budget</h1>
+				</div>
+				
+			</section>
+			
+			<!-- Body -->
+			<section class="sop-body">
+				<p>Small library to create and print text documents using HTML language.</p>
+				<h1>Tittle 1</h1>
+				
+				<h2>Tittle 2</h2>
+				
+				<h3>Tittle 3</h3>
+				
+				<p>This is a paragraph example, with <b>bold</b> text, <i>italic</i> text and <u>underlined</u> text.</p>
+				<p class="sop-center">We also can center text.</p>
+				<p class="sop-right">Or align it to the right.</p>
+				<p class="sop-justified">Or even justify it, in order to have a more elegant document to present whoever we want, and margins will be similar and very straight on both sides of the paper. This is a very cool feature that we can use whenever we want.</p>
+				
+				<table>
+					<thead>
+						<tr>
+							<th>Col 1</th>
+							<th>Col 2</th>
+							<th>Col 3</th>
+							<th>Col 4</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Data 1</td>
+							<td>Data 2</td>
+							<td>Data 3</td>
+							<td>Data 4</td>
+						</tr>
+						<tr>
+							<td>Data 1</td>
+							<td>Data 2</td>
+							<td>Data 3</td>
+							<td>Data 4</td>
+						</tr>
+						<tr>
+							<td>Data 1</td>
+							<td>Data 2</td>
+							<td>Data 3</td>
+							<td>Data 4</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+			
 		</div>
 		
-		<button class="invisible floating" onclick="startPrinting()">Print</button>
+		<button class="sop-invisible floating" onclick="startPrinting()">Print</button>
 		
 		<!-- Javascript files -->
 		<script src="sheet-of-paper.js"></script>

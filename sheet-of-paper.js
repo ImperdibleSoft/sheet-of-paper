@@ -4,10 +4,10 @@ function startPrinting(){
 	alreadyPrinted = false;
 	
 	/*	Set the viewer in Printer mode	*/
-	document.body.className = "printer";
+	document.body.className = "sop-printer";
 	
 	/*	Hide all invisible elemenets	*/
-	var invisibleItems = document.getElementsByClassName("invisible");
+	var invisibleItems = document.getElementsByClassName("sop-invisible");
 	for(var x in invisibleItems){
 		if(invisibleItems[x] && invisibleItems[x].style){
 			invisibleItems[x].style.display = "none";
@@ -38,10 +38,10 @@ function restoreViewer(){
 	alreadyPrinted = false;
 	
 	/*	Set the viewer in Printer mode	*/
-	document.body.className = "viewer";
+	document.body.className = "sop-viewer";
 	
 	/*	Hide all invisible elemenets	*/
-	var invisibleItems = document.getElementsByClassName("invisible");
+	var invisibleItems = document.getElementsByClassName("sop-invisible");
 	for(var x in invisibleItems){
 		if(invisibleItems[x] && invisibleItems[x].style){
 			invisibleItems[x].style.display = "block";
