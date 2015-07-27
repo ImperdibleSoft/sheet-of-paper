@@ -15,13 +15,11 @@
 		}
 		
 		/*	Open Print dialog	*/
-		setTimeout(function(){
-			if(window.print()){ 
-				alreadyPrinted = true; 
-			}else{ 
-				alreadyPrinted = true;
-			}
-		}, 1000);
+		if(window.print()){ 
+			alreadyPrinted = true; 
+		}else{ 
+			alreadyPrinted = true;
+		}
 		
 		function restoreViewer(){
 			sop.alreadyPrinted = false;
