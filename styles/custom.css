@@ -1,1 +1,8 @@
-﻿
+﻿.floating{
+	position: fixed;
+	display: block;
+	float: right;
+	
+	bottom: 20px;
+	right: 20px;
+}
