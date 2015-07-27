@@ -1,13 +1,15 @@
 # Sheet of Paper
 <img src="http://imperdiblesoft.github.io/sheet-of-paper/images/logo.png" />
 <br />
-Sheet of Paper is a small library to create and print paper documents using HTML language.
+<p>Sheet of Paper is a small library to create and print paper documents using HTML language.</p>
+<p>With this library, you can use your website data to create a view that looks like a document.</p>
 
-With this library, you can use your website data to create a view that looks like a document.
-You can also print this "document" by using our <code>sop.print()</code> function.
+<a href="http://imperdiblesoft.github.io/sheet-of-paper" target="_blank">View demo</a>
+
+<p>You can also print this "document" by using our <code>sop.print()</code> function.</p>
 
 <h2>Basic Classes</h2>
-We provide you some default classes in order to make SoP work. Controling these basic classes will allow you to setup your "document" to make the magic!
+<p>We provide you some default classes in order to make SoP work. Controling these basic classes will allow you to setup your "document" to make the magic!
 <br />
 <code>&lt;body class="sop-viewer"&gt;</code><br />
 <code>  &lt;div class="sop-page sop-A4"&gt;&lt;/div &gt;</code><br />
@@ -28,7 +30,6 @@ We provide you some default classes in order to make SoP work. Controling these 
 <p><b>sop-invisible</b>: This optional class, is a mark to hide all "sop-invisible" elements when printing your document.</p>
 
 <p>Once you know all of this, you can use your custom CSS to customize the content of your document.</p>
-<a href="http://imperdiblesoft.github.io/sheet-of-paper" target="_blank">View demo</a>
 
 <h2>Printing</h2>
 <p>A common action for documents is printing them. We suggest you tu use our function custom function.</p>
@@ -38,7 +39,7 @@ We provide you some default classes in order to make SoP work. Controling these 
 <p>Once you close the print dialog, the system will restore the viewer's appearance and will show hidden elements.</p>
 
 <h2>Optional classes</h2>
-Besides this, we also provide another usefull classes that allows you to organize your document.
+<p>Besides this, we also provide another usefull classes that allows you to organize your document.</p>
 
 <b><u>Sections</u></b>
 <br />
