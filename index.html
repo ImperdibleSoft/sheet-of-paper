@@ -14,8 +14,11 @@
         <link class="hrefLogo" rel="apple-touch-icon" href="images/logo.png" />
 		
 		<!-- CSS files -->
+        <link href="http://www.material-css.com/material-css.css" type="text/css" rel="stylesheet" />
         <link href="sheet-of-paper.css" type="text/css" rel="stylesheet" />
         <link href="styles/custom.css" type="text/css" rel="stylesheet" />
+		
+		
 	</head>
 	
 	<body class="sop-viewer">
@@ -88,6 +91,10 @@
 				</table>
 			</section>
 			
+			<br />
+			<br />
+			<br />
+			<br />
 			<section class="sop-footer">
 				<div class="sop-left">
 					<img src="images/imperdiblesoft/text_logo.png" />
@@ -100,9 +107,12 @@
 			
 		</div>
 		
-		<button class="sop-invisible floating" onclick="sop.print()">Print</button>
+		<div class="mc-floating sop-invisible">
+			<button class="mc-button mc-button-text mc-button-raised mc-clickeable mc-bg-grey mc-color-white" onclick="sop.print()">Print</button>
+		</div>
 		
 		<!-- Javascript files -->
+		<script src="http://www.material-css.com/material-css.js"></script>
 		<script src="sheet-of-paper.js"></script>
 		<script src="js/custom.js"></script>
 		
