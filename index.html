@@ -28,8 +28,33 @@
 			<!-- Header -->
 			<section class="sop-header">
 				<div class="sop-right">
-					<p><b>Date</b>: <script>document.write( new Date().getDate() +"/"+ (new Date().getMonth() + 1) +"/"+ new Date().getFullYear() )</script></p>
-					<p><b>Time</b>: <script>document.write( new Date().getHours() +":"+ new Date().getMinutes() )</script></p>
+					<p><b>Date</b>: <script>
+						if(new Date().getDate() < 10){
+							document.write( "0"+ new Date().getDate() +"/"); 
+						}else{ 
+							document.write( new Date().getDate() +"/");
+						}
+						
+						if((new Date().getMonth() + 1) < 10){
+							document.write( "0"+ (new Date().getMonth() + 1) +"/"); 
+						}else{ 
+							document.write( (new Date().getMonth() + 1) +"/");
+						}						
+						document.write( new Date().getFullYear() );
+					</script></p>
+					<p><b>Time</b>: <script>
+						if(new Date().getHours() < 10){
+							document.write( "0"+ new Date().getHours() +":"); 
+						}else{ 
+							document.write( new Date().getHours() +":");
+						} 
+						
+						if(new Date().getMinutes() < 10){
+							document.write( "0"+ new Date().getMinutes()); 
+						}else{ 
+							document.write( new Date().getMinutes());
+						}
+					</script></p>
 				</div>
 				
 				<div class="sop-left">
@@ -117,6 +142,7 @@
 		<div class="sop-invisible">
 			<div class="mc-floating">
 				<button class="mc-button mc-button-text mc-button-raised mc-clickeable mc-bg-blue mc-color-white" onclick="sop.print()">Print</button>
+				<a href="http://www.github.com/imperdiblesoft/sheet-of-paper" target="_blank" class="mc-button mc-button-comb mc-button-raised mc-clickeable mc-bg-darkpurple mc-color-white" mc-action="github">Github</a>
 			</div>
 		</div>
 		
