@@ -25,36 +25,37 @@
 			<!-- Header -->
 			<section class="sop-header">
 				<div class="sop-right">
-					<p><b>Budget</b>: 123456</p>
-					<p><b>Date</b>: 27/07/2015</p>
-					<p><b>Time</b>: 08:35 a.m.</p>
+					<p><b>Date</b>: <script>document.write( new Date().getDate() +"/"+ (new Date().getMonth() + 1) +"/"+ new Date().getFullYear() )</script></p>
+					<p><b>Time</b>: <script>document.write( new Date().getHour() +"/"+ new Date().getMinutes() )</script></p>
 				</div>
 				
 				<div class="sop-left">
-					<img src="images/imperdiblesoft/text_logo.png" />
+					<img src="images/logo.png" />
 				</div>
 				<br />
 				
 				<div class="sop-center">
-					<h1>Budget</h1>
+					<h1>Sheet of Paper</h1>
 				</div>
 				
 			</section>
 			
 			<!-- Body -->
 			<section class="sop-body">
-				<p>Small library to create and print text documents using HTML language.</p>
+				<p>Sheet of Paper (SoP) is a small library to create and print text documents using HTML language.</p>
+				
+				<p>We provide you several default classes to organize your document. For example, you can have a <i>header</i>, a <i>body</i> and a <i>footer</i>. Also, you can divide your <i>header</i> and <i>footer</i> into 3 different sections, by using <i>.sop-left</i>, <i>.sop-right</i> and <i>.sop-center</i> classes.</p>
+				
+				<p>Default styles have been also set for titles and text, so you can use:</p>
 				<h1>Tittle 1</h1>
-				
 				<h2>Tittle 2</h2>
-				
 				<h3>Tittle 3</h3>
-				
-				<p>This is a paragraph example, with <b>bold</b> text, <i>italic</i> text and <u>underlined</u> text.</p>
-				<p class="sop-center">We also can center text.</p>
+				<p>Paragraph, <b>bold</b>, <i>italic</i> and <u>underlined</u>.</p>
+				<p class="sop-center">You also can center text.</p>
 				<p class="sop-right">Or align it to the right.</p>
-				<p class="sop-justified">Or even justify it, in order to have a more elegant document to present whoever we want, and margins will be similar and very straight on both sides of the paper. This is a very cool feature that we can use whenever we want.</p>
+				<p class="sop-justified">Or even justify it, in order to have a more elegant document to present whoever you want, and margins will be similar and very straight on both sides of the paper. This is a very cool feature that we can use whenever we want.</p>
 				
+				<p>You also can create simple tables without taking care about the CSS.</p>
 				<table>
 					<thead>
 						<tr>
@@ -85,6 +86,15 @@
 						</tr>
 					</tbody>
 				</table>
+			</section>
+			
+			<section class="sop-footer">
+				<div class="sop-left">
+					<img src="images/imperdiblesoft/logo.png" />
+				</div>
+				<div class="sop-right">
+					<p><i>Page 1</i></p>
+				</div>
 			</section>
 			
 		</div>
