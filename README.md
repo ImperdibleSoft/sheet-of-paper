@@ -27,6 +27,7 @@ We provide you some default classes in order to make SoP work. Controling these 
 <p><b>sop-invisible</b>: This optional class, is a mark to hide all "sop-invisible" elements when printing your document.</p>
 
 <p>Once you know all of this, you can use your custom CSS to customize the content of your document.</p>
+<a href="http://imperdiblesoft.github.io/sheet-of-paper" target="_blank">View demo</a>
 
 <h2>Printing</h2>
 <p>A common action for documents is printing them. We suggest you tu use our function custom function.</p>
