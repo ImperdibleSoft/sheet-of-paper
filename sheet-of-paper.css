@@ -13,9 +13,7 @@
 	/* --- http://imperdiblesoft.github.io/sheet-of-paper	  --------------------------- */
 	/* -------------------------------------------------------------------------------------- */
 	
-*{
-	line-heigh: normal;
-}
+*{line-height: normal;}
 body{color:#000;}
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
 table{border-collapse:collapse;border-spacing:0;}
@@ -81,7 +79,7 @@ html, body{
 	
 	/* border: 1px dotted grey; */
 }
-.sop-page .sop-header .sop-left, .sop-page .sop-header .sop-center, .sop-page .sop-header .sop-right{
+.sop-page .sop-header .sop-left, .sop-page .sop-header .sop-center, .sop-page .sop-header .sop-right, .sop-page .sop-footer .sop-left, .sop-page .sop-footer .sop-center, .sop-page .sop-footer .sop-right{
 	position: relative;
 	display: block;
 	
@@ -91,16 +89,27 @@ html, body{
 	clear: none;
 	overflow: hidden;
 }
-.sop-page .sop-header .sop-left{
+.sop-page .sop-header .sop-left, .sop-page .sop-footer .sop-left{
 	float: left;
 }
-.sop-page .sop-header .sop-center{
+.sop-page .sop-header .sop-center, .sop-page .sop-footer .sop-center{
 	float: none;
 	
 	margin: 0px auto;
 }
-.sop-page .sop-header .sop-right{
+.sop-page .sop-header .sop-right, .sop-page .sop-footer .sop-right{
 	float: right;
+}
+.sop-footer{
+	position: relative;
+	display: block;
+	float: left;
+	
+	width: 100%;
+	height: auto;
+	bottom: 0px;
+	
+	box-sizing: border-box;
 }
 
 /*	Elements	*/
@@ -152,11 +161,28 @@ html, body{
 }
 
 /*	Relative elements	*/
-.sop-page .sop-header img{
+.sop-page .sop-header h1, .sop-page .sop-header h2, .sop-page .sop-header h3, .sop-page .sop-header p, .sop-page .sop-footer h1, .sop-page .sop-footer h2, .sop-page .sop-footer h3, .sop-page .sop-footer p{
+	margin-bottom: 5px;
+}
+
+.sop-page .sop-header img, .sop-page .sop-footer img{
 	max-width: 100%;
 }
-.sop-page .sop-header p, .sop-page .sop-footer p{
-	margin-bottom: 5px;
+
+.sop-page .sop-footer h1{
+	font-size: 110%;
+}
+.sop-page .sop-footer h2{
+	font-size: 100%;
+}
+.sop-page .sop-footer h3{
+	font-size: 90%;
+}
+.sop-page .sop-footer p{
+	font-size: 80%;
+}
+.sop-page .sop-footer img{
+	max-height: 100%;
 }
 
 /*	Viewer styles	*/
