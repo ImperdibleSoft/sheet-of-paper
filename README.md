@@ -1,5 +1,6 @@
 # Sheet of Paper
 <img src="http://imperdiblesoft.github.io/sheet-of-paper/images/logo.png" />
+<br />
 Sheet of Paper is a small library to create and print paper documents using HTML language.
 
 With this library, you can use your website data to create a view that looks like a document.
