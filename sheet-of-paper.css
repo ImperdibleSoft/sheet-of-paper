@@ -13,9 +13,7 @@
 	/* --- http://imperdiblesoft.github.io/sheet-of-paper	  --------------------------- */
 	/* -------------------------------------------------------------------------------------- */
 	
-*{
-	line-heigh: normal;
-}
+*{line-height: normal;}
 body{color:#000;}
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
 table{border-collapse:collapse;border-spacing:0;}
@@ -184,7 +182,7 @@ html, body{
 	font-size: 80%;
 }
 .sop-page .sop-footer img{
-	max-heigh: 100%;
+	max-height: 100%;
 }
 
 /*	Viewer styles	*/
