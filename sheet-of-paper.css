@@ -30,6 +30,10 @@ body {font:13px/1.22 arial,helvetica,clean,sans-serif;*font-size:small;*font:x-s
 table {font-size:inherit;font:100%;}
 pre,code,kbd,samp,tt{font-family:monospace;*font-size:108%;line-height:99%;}
 
+html, body{
+	min-width: 1024px;
+}
+
 /*	Common styles	*/
 /*	Page sizes	*/
 .sop-page{
@@ -75,7 +79,7 @@ pre,code,kbd,samp,tt{font-family:monospace;*font-size:108%;line-height:99%;}
 	
 	/* border: 1px dotted grey; */
 }
-.sop-page .sop-header .sop-left, .sop-page .sop-header .sop-center, .sop-page .sop-header .sop-right, .sop-page .sop-footer .sop-left, .sop-page .sop-footer .sop-center, .sop-page .sop-footer .sop-right{
+.sop-page .sop-header > .sop-left, .sop-page .sop-header > .sop-center, .sop-page .sop-header > .sop-right, .sop-page .sop-footer > .sop-left, .sop-page .sop-footer > .sop-center, .sop-page .sop-footer > .sop-right{
 	position: relative;
 	display: block;
 	
@@ -85,15 +89,15 @@ pre,code,kbd,samp,tt{font-family:monospace;*font-size:108%;line-height:99%;}
 	clear: none;
 	overflow: hidden;
 }
-.sop-page .sop-header .sop-left, .sop-page .sop-footer .sop-left{
+.sop-page .sop-header > .sop-left, .sop-page .sop-footer > .sop-left{
 	float: left;
 }
-.sop-page .sop-header .sop-center, .sop-page .sop-footer .sop-center{
+.sop-page .sop-header > .sop-center, .sop-page .sop-footer > .sop-center{
 	float: none;
 	
 	margin: 0px auto;
 }
-.sop-page .sop-header .sop-right, .sop-page .sop-footer .sop-right{
+.sop-page .sop-header > .sop-right, .sop-page .sop-footer > .sop-right{
 	float: right;
 }
 .sop-footer{
