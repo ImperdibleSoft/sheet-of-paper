@@ -113,7 +113,7 @@ pre,code,kbd,samp,tt{font-family:monospace;*font-size:108%;line-height:99%;}
 	position: relative;
 	display: block;
 	
-	/* width: 100%; */
+	width: 100%;
 	margin-bottom: 20px;
 }
 .sop-page h1{
