@@ -3,9 +3,6 @@
 	"print": function(){
 		sop.alreadyPrinted = false;
 		
-		/*	Set the viewer in Printer mode	*/
-		document.body.className = "sop-printer";
-		
 		/*	Hide all invisible elemenets	*/
 		var invisibleItems = document.getElementsByClassName("sop-invisible");
 		for(var x in invisibleItems){
@@ -13,6 +10,10 @@
 				invisibleItems[x].style.display = "none";
 			}
 		}
+	
+		/*	Set the viewer in Printer mode	*/
+		document.body.className = "sop-printer";
+		
 		
 		/*	Open Print dialog	*/
 		if(window.print()){ 

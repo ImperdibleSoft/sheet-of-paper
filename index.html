@@ -1,0 +1,156 @@
+﻿<html>
+	<head>
+		<title>Sheet of Paper</title>
+		<meta name="viewport" content="width=device-width, user-scalable=yes">
+		<meta name="description" content="Small library to create and print text documents using HTML language." />
+
+		<!--Android -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<link class="hrefLogo" rel="icon" href="images/logo.png" sizes="256x256">
+    <link class="hrefLogo" rel="shortcut icon" href="images/logo.png" />
+
+		<!-- iOS -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+    <link class="hrefLogo" rel="apple-touch-icon" href="images/logo.png" />
+
+		<!-- CSS files -->
+    <link href="http://www.material-css.com/material-css.css" type="text/css" rel="stylesheet" />
+    <link href="sheet-of-paper.css" type="text/css" rel="stylesheet" />
+    <link href="styles/custom.css" type="text/css" rel="stylesheet" />
+
+	</head>
+	<body class="sop-viewer">
+
+		<div class="sop-page sop-A4">
+
+			<!-- Header -->
+			<section class="sop-header">
+				<div class="sop-right">
+					<p><b>Date</b>: <script>
+						if(new Date().getDate() < 10){
+							document.write( "0"+ new Date().getDate() +"/");
+						}else{
+							document.write( new Date().getDate() +"/");
+						}
+
+						if((new Date().getMonth() + 1) < 10){
+							document.write( "0"+ (new Date().getMonth() + 1) +"/");
+						}else{
+							document.write( (new Date().getMonth() + 1) +"/");
+						}
+						document.write( new Date().getFullYear() );
+					</script></p>
+					<p><b>Time</b>: <script>
+						if(new Date().getHours() < 10){
+							document.write( "0"+ new Date().getHours() +":");
+						}else{
+							document.write( new Date().getHours() +":");
+						}
+
+						if(new Date().getMinutes() < 10){
+							document.write( "0"+ new Date().getMinutes());
+						}else{
+							document.write( new Date().getMinutes());
+						}
+					</script></p>
+				</div>
+
+				<div class="sop-left">
+					<img src="images/logo.png" width="90px"/>
+				</div>
+				<br />
+
+				<div class="sop-center">
+					<h1>Sheet of Paper</h1>
+				</div>
+
+			</section>
+
+			<!-- Body -->
+			<section class="sop-body">
+				<p>Sheet of Paper (SoP) is a small library to create and print text documents using HTML language.</p>
+
+				<p>We provide you several default classes to organize your document. For example, you can have a <i>header</i>, a <i>body</i> and a <i>footer</i>. Also, you can divide your <i>header</i> and <i>footer</i> into 3 different sections, by using <i>.sop-left</i>, <i>.sop-right</i> and <i>.sop-center</i> classes.</p>
+
+				<p>Default styles have been also set for titles and text, so you can use:</p>
+				<h1>Tittle 1</h1>
+				<h2>Tittle 2</h2>
+				<h3>Tittle 3</h3>
+				<p>Paragraph, <b>bold</b>, <i>italic</i> and <u>underlined</u>.</p>
+				<p class="sop-center">You also can center text.</p>
+				<p class="sop-right">Or align it to the right.</p>
+				<p class="sop-justified">Or even justify it, in order to have a more elegant document to present whoever you want, and margins will be similar and very straight on both sides of the paper. This is a very cool feature that we can use whenever we want.</p>
+
+				<p>You also can create simple tables without taking care about the CSS.</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Col 1</th>
+							<th>Col 2</th>
+							<th>Col 3</th>
+							<th>Col 4</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Data 1</td>
+							<td>Data 2</td>
+							<td>Data 3</td>
+							<td>Data 4</td>
+						</tr>
+						<tr>
+							<td>Data 1</td>
+							<td>Data 2</td>
+							<td>Data 3</td>
+							<td>Data 4</td>
+						</tr>
+						<tr>
+							<td>Data 1</td>
+							<td>Data 2</td>
+							<td>Data 3</td>
+							<td>Data 4</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<section class="sop-footer">
+				<div class="sop-left">
+					<img src="images/imperdiblesoft/text_logo.png" />
+				</div>
+				<br />
+				<div class="sop-right">
+					<p><i>Page 1</i></p>
+				</div>
+			</section>
+
+		</div>
+
+		<div class="sop-invisible">
+			<div class="mc-floating">
+				<button class="mc-button mc-button-text mc-button-raised mc-clickeable mc-bg-blue mc-color-white" onclick="sop.print()">Print</button>
+				<a href="http://www.github.com/imperdiblesoft/sheet-of-paper" target="_blank" class="mc-button mc-button-comb mc-button-raised mc-clickeable mc-bg-darkpurple mc-color-white" mc-action="github">Github</a>
+			</div>
+		</div>
+
+		<!-- Javascript files -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="http://www.material-css.com/material-css.js"></script>
+		<script src="sheet-of-paper.js"></script>
+		<script src="js/analytics.js"></script>
+		<script src="js/custom.js"></script>
+
+  	<script src="http://www.imperdiblesoft.com/js/custom-sign.js"></script>
+	</body>
+</html>
